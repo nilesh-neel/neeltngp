@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://unpkg.com/purecss@2.0.3/build/menus-min.css');
+@import url('https://unpkg.com/purecss@2.0.3/build/buttons-min.css');
+@import url('https://unpkg.com/purecss@2.0.3/build/tables-min.css');
+.lang_btn {
+    border-radius: 5px;
+    border: none;
+    background-color: darkgreen;
+    color: #fff;
+}
+
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+
+body {
+    background-color: #FFF;
+    /* #F6FFFF  #DEF2F1*/
+}
+
+.fnt {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 1px;
+    padding: 20px 70px;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 0px 80px rgba(0, 0, 0, 0.12);
+}
+
+.container .box {
+    position: relative;
+    background-color: #def2f1;
+    /*#FFF2F3*/
+    padding: 10px 10px 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+@media screen and (orientation: portrait) {
+    .container {
+        padding: 10px 10px;
+    }
+}
+
+.box_one {
+    text-align: left;
+}
+
+.blk_clr {
+    color: black;
+}
+
+.box_one_head {
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.movetxt {
+    background-color: maroon;
+    color: white;
+    font-weight: bold;
+    height: auto;
+    font-size: 110%;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 0px 80px rgba(0, 0, 0, 0.12);
+}
+
+.table-main {
+    position: relative;
+    margin: 0 auto;
+}
+
+td {
+    text-align: left;
+}
+
+
+/*LOGIN CONFIGURATION PAGE*/
+
+.form-login {
+    max-width: 330px;
+    margin: 20px auto 0;
+    background: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.form-login h2.form-login-heading {
+    margin: 0;
+    padding: 25px 20px;
+    text-align: center;
+    background: #ADD8E6;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.login-wrap {
+    padding: 10px 20px;
+}
+
+.registration {
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+.form-control {
+    display: block;
+    width: -webkit-fill-available;
+    height: 20px;
+    padding: 6px 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+.btn {
+    background-color: #328ca8;
+    padding: 10px 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 0px 80px rgba(0, 0, 0, 0.12);
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+
+/**-----button two---------**/
+
+.btn_two {
+    background-color: #328ca8;
+    padding: 10px 30px;
+    text-align: center;
+    color: white;
+    width: 47%;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 0px 80px rgba(0, 0, 0, 0.12);
+}
+
+.btn_two:hover {
+    background-color: gray;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover,
+a:focus {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*And your footer to table-row*/
+
+footer {
+    border-radius: 10px;
+    display: flex;
+    height: 50%;
+    background: #0c1900;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.col-3 {
+    width: 100%;
+    float: left;
+    padding: 0.5em 3%;
+}
+
+footer h4,
+h2,
+p {
+    margin: 1em 0;
+}
+
+.svg_address_logo {
+    vertical-align: -50%;
+}
+
+.png-svg {
+    vertical-align: -50%;
+}
+
+.svg-email {
+    vertical-align: -110%;
+}
+
+.pure-menu-link:hover {
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+}

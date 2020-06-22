@@ -1,0 +1,71 @@
+<div class=" justify-contents-center align-items-center" style="height: auto;">
+    <div class=" justify-contents-center align-items-center res">
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <h3 class="col-sm-12">NEW REGISTRATION <span class="tamil_fnt_head">(புதிய பதிவு)</span></h3>
+            </div>
+            <div class="form-group">
+                <label for="email" class="control-label col-sm-12">EMAIL <span class="tamil_fnt">(மின்னஞ்சல்)</span></label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="email" placeholder="Enter Your Email id/மின்னஞ்சலை பதிவுசெய்" style="text-transform:lowercase;">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contactno" class="control-label col-sm-12">CONTACT NO<span class="tamil_fnt">(தொடர்பு எண்)</span> </label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="contactno" placeholder="Enter Your Contact No./உங்கள் தொடர்பு எண்" oninput="javascript: if (this.value.length > 10) this.value = this.value.slice(0, 10); if(isNaN(this.value))this.value ='';">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-label col-sm-12">PASSWORD<span class="tamil_fnt">(கடவுச்சொல்)</span> </label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="password" class="form-control pass" id="password" placeholder="Enter Password/
+உங்கள் கடவுச்சொல்லை உள்ளிடவும்">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12" id="prog">
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <p class="col-sm-12" style="
+  font-size: 14px;
+  font-weight: 1000;
+  color: black;
+">Password minimum 6 characters and must contains atleast one uppercase, lowercase, numbers and symbols. ( Ex: Govt#1234 )</p>
+                <p class="col-sm-12" style="
+  font-size: 12px;
+  font-weight: 1000;
+  color: darkgreen;
+">(கடவுச்சொல் குறைந்தபட்சம் 6 எழுத்துகள் மற்றும் குறைந்தபட்சம் ஒரு பெரிய எழுத்து, சிற்றெழுத்து, எண்கள் மற்றும் சின்னங்களைக் கொண்டிருக்க வேண்டும்.)Ex: Govt#1234</p>
+            </div>
+            <div class="form-group">
+                <label for="cpassword" class="control-label col-sm-12">CONFIRM PASSWORD<span class="tamil_fnt">(கடவுச்சொல்லை உறுதிப்படுத்தவும்)</span> </label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="password" class="form-control" id="cpassword" placeholder="Re-Enter Password/கடவுச்சொல்லை உள்ளிடவும்">
+                </div>
+            </div>
+
+            <button class="btn btn-primary" type="button" id="sendotp">SEND OTP</button>
+
+            <input type="text" class="form-control" id="otp" placeholder="Enter OTP Here" style="display: none;">
+
+            <button type="button" name="" id="resend" class="justify-contents-center" style="color: black; border: none; display: none;" disabled="disabled">RESEND OTP/ OTP
+மீண்டும் அனுப்பு</button>
+            <button class="btn btn-primary" type="button" id="submit" style="display: none;">Submit</button>
+
+        </form>
+    </div>
+</div>

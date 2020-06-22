@@ -1,0 +1,54 @@
+﻿<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <div>
+        <form [formGroup]="loginForm">
+            <div class="form-group">
+                <label for="formGroupExampleInput">Example label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Another label</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+        </form>
+        <br />
+        <form class="wrap" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+                <h3 class="col-sm-12">CANDIDATE LOGIN<span class="tamil_fnt_head">(மாணவர் உள்நுழைவு)</span> </h3>
+                <span style="color: red;" class="text-center"></span>
+            </div>
+            <div class=" form-group">
+                <label for="email" class="control-label col-sm-12">EMAIL<span class="tamil_fnt">(மின்னஞ்சல்)</span></label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Enter Your Email id / மின்னஞ்சலை பதிவுசெய்">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-label col-sm-12">PASSWORD<span class="tamil_fnt">(கடவுச்சொல்)</span> </label>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="password" class="form-control pass" id="password" name="password" placeholder="Enter Password/ கடவுச்சொல்லை உள்ளிடவும்">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <button class="btn btn-primary text-center" name="submit" type="submit" id="submit">SUBMIT</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="../forgot-password" style="font-size: small;">Forgot Password?<p style="font-size: 10px;color: darkgreen;">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</p></a>
+
+                </div>
+                <div class="col">
+                    <a href="../candidate-registration" style="float: right;font-size: small;">New Registration<p style="font-size: 10px;color: darkgreen;">புதிய பதிவு</p> </a>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
