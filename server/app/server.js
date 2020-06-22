@@ -14,15 +14,6 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
-// app.get("*", (req, res) => {
-//     res.sendFile(HTML_FILE);
-// });
-
-// routes
-//import as from './app/routes/auth.route'
-
-
 var corsOptions = {
     origin: "http://localhost:8081",
 };
